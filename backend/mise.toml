@@ -1,0 +1,25 @@
+
+[tasks."bundle:install"]
+description = "Install gem dependencies"
+run = "bundle install"
+
+[tasks.rails]
+description = "generic base rails command"
+alias = "r"
+run = "rails"
+
+[tasks.server]
+description = "Start the Rails server"
+alias = "s"
+run = "rails server"
+
+[tasks.test]
+description = "Run tests"
+alias = "t"
+run = "rails test"
+
+[tasks.lint]
+description = "Run lint using Rubocop"
+alias = "l"
+run = "rubocop"
+

@@ -1,24 +1,47 @@
-# README
+# Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails API backend service for the social media post scheduler application.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+- Ruby and Bundler
+- Optional: `mise` for managing Ruby and task shortcuts
 
-* System dependencies
+## Setup
 
-* Configuration
+```sh
+bundle install
+bin/rails db:prepare
+```
 
-* Database creation
+If you use `mise`, you can install gems with:
 
-* Database initialization
+```sh
+mise run bundle:install
+```
 
-* How to run the test suite
+## Run The API
 
-* Services (job queues, cache servers, search engines, etc.)
+Start the Rails server on port 3000:
 
-* Deployment instructions
+```sh
+bin/rails server
+```
 
-* ...
+With `mise`:
+
+```sh
+mise run server
+```
+
+## Run Tests
+
+```sh
+bin/rails test
+```
+
+With `mise`:
+
+```sh
+mise run test
+```
