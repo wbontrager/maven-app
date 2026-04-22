@@ -1,2 +1,8 @@
+experimental_monorepo_root = true
+
 [tools]
 ruby = "4"
+bun = "1"
+
+[monorepo]
+config_roots = ["backend", "frontend"]

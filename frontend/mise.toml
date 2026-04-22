@@ -1,0 +1,19 @@
+[tasks.install]
+description = "Install frontend dependencies with Bun"
+run = "bun install"
+
+[tasks.dev]
+description = "Start the frontend dev server"
+run = "bun run dev"
+
+[tasks.build]
+description = "Build the frontend"
+run = "bun run build"
+
+[tasks.lint]
+description = "Run frontend lint checks"
+run = "bun run lint"
+
+[tasks.preview]
+description = "Preview the frontend production build"
+run = "bun run preview"
